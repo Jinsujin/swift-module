@@ -14,6 +14,7 @@
 		9865787029B1CA4100BB1BDA /* LegoWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9865786F29B1CA4100BB1BDA /* LegoWorldTests.swift */; };
 		9865787A29B1CA4100BB1BDA /* LegoWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9865787929B1CA4100BB1BDA /* LegoWorldUITests.swift */; };
 		9865787C29B1CA4100BB1BDA /* LegoWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9865787B29B1CA4100BB1BDA /* LegoWorldUITestsLaunchTests.swift */; };
+		98DFDF8129B8FCFC00228BE2 /* LocalStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 98DFDF8029B8FCFC00228BE2 /* LocalStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9865787529B1CA4100BB1BDA /* LegoWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9865787929B1CA4100BB1BDA /* LegoWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoWorldUITests.swift; sourceTree = "<group>"; };
 		9865787B29B1CA4100BB1BDA /* LegoWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98DFDF7E29B8FB9700228BE2 /* LocalStorage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LocalStorage; path = "../../swift-coordinator/LocalStorage"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98DFDF8129B8FCFC00228BE2 /* LocalStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +77,12 @@
 		9865785229B1CA4000BB1BDA = {
 			isa = PBXGroup;
 			children = (
+				98DFDF7E29B8FB9700228BE2 /* LocalStorage */,
 				9865785D29B1CA4000BB1BDA /* LegoWorld */,
 				9865786E29B1CA4100BB1BDA /* LegoWorldTests */,
 				9865787829B1CA4100BB1BDA /* LegoWorldUITests */,
 				9865785C29B1CA4000BB1BDA /* Products */,
+				98DFDF7F29B8FCFC00228BE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +132,13 @@
 			path = LegoWorldUITests;
 			sourceTree = "<group>";
 		};
+		98DFDF7F29B8FCFC00228BE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +155,9 @@
 			dependencies = (
 			);
 			name = LegoWorld;
+			packageProductDependencies = (
+				98DFDF8029B8FCFC00228BE2 /* LocalStorage */,
+			);
 			productName = LegoWorld;
 			productReference = 9865785B29B1CA4000BB1BDA /* LegoWorld.app */;
 			productType = "com.apple.product-type.application";
@@ -424,6 +439,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +468,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +594,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		98DFDF8029B8FCFC00228BE2 /* LocalStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LocalStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9865785329B1CA4000BB1BDA /* Project object */;
 }

@@ -14,7 +14,17 @@
 		9865787029B1CA4100BB1BDA /* LegoWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9865786F29B1CA4100BB1BDA /* LegoWorldTests.swift */; };
 		9865787A29B1CA4100BB1BDA /* LegoWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9865787929B1CA4100BB1BDA /* LegoWorldUITests.swift */; };
 		9865787C29B1CA4100BB1BDA /* LegoWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9865787B29B1CA4100BB1BDA /* LegoWorldUITestsLaunchTests.swift */; };
-		98DFDF8129B8FCFC00228BE2 /* LocalStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 98DFDF8029B8FCFC00228BE2 /* LocalStorage */; };
+		98DCC4A529B917000003EE01 /* LocalStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 98DCC4A429B917000003EE01 /* LocalStorage */; };
+		98DCC4A729B917000003EE01 /* LocalStorage in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 98DCC4A429B917000003EE01 /* LocalStorage */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		98DCC4A929B917680003EE01 /* StorageManager in Frameworks */ = {isa = PBXBuildFile; productRef = 98DCC4A829B917680003EE01 /* StorageManager */; };
+		98DCC4AA29B917680003EE01 /* StorageManager in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 98DCC4A829B917680003EE01 /* StorageManager */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		98FD55F229B907E400E00BDB /* TodoFeature.docc in Sources */ = {isa = PBXBuildFile; fileRef = 98FD55F129B907E400E00BDB /* TodoFeature.docc */; };
+		98FD55F829B907E400E00BDB /* TodoFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FD55EE29B907E400E00BDB /* TodoFeature.framework */; };
+		98FD55FF29B907E400E00BDB /* TodoFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FD55FE29B907E400E00BDB /* TodoFeatureTests.swift */; };
+		98FD560029B907E400E00BDB /* TodoFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FD55F029B907E400E00BDB /* TodoFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98FD560329B907E400E00BDB /* TodoFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FD55EE29B907E400E00BDB /* TodoFeature.framework */; };
+		98FD560529B907E400E00BDB /* TodoFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98FD55EE29B907E400E00BDB /* TodoFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98FD560C29B9083A00E00BDB /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFDF8229B9021400228BE2 /* TodosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +42,54 @@
 			remoteGlobalIDString = 9865785A29B1CA4000BB1BDA;
 			remoteInfo = LegoWorld;
 		};
+		98FD55F929B907E400E00BDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9865785329B1CA4000BB1BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98FD55ED29B907E400E00BDB;
+			remoteInfo = TodoFeature;
+		};
+		98FD55FB29B907E400E00BDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9865785329B1CA4000BB1BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9865785A29B1CA4000BB1BDA;
+			remoteInfo = LegoWorld;
+		};
+		98FD560129B907E400E00BDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9865785329B1CA4000BB1BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98FD55ED29B907E400E00BDB;
+			remoteInfo = TodoFeature;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98DCC4A629B917000003EE01 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98DCC4A729B917000003EE01 /* LocalStorage in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FD560429B907E400E00BDB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98DCC4AA29B917680003EE01 /* StorageManager in Embed Frameworks */,
+				98FD560529B907E400E00BDB /* TodoFeature.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9865785B29B1CA4000BB1BDA /* LegoWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegoWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +102,13 @@
 		9865787529B1CA4100BB1BDA /* LegoWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9865787929B1CA4100BB1BDA /* LegoWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoWorldUITests.swift; sourceTree = "<group>"; };
 		9865787B29B1CA4100BB1BDA /* LegoWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		98DFDF7E29B8FB9700228BE2 /* LocalStorage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LocalStorage; path = "../../swift-coordinator/LocalStorage"; sourceTree = "<group>"; };
+		98DFDF8229B9021400228BE2 /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
+		98FD55EE29B907E400E00BDB /* TodoFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TodoFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FD55F029B907E400E00BDB /* TodoFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoFeature.h; sourceTree = "<group>"; };
+		98FD55F129B907E400E00BDB /* TodoFeature.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TodoFeature.docc; sourceTree = "<group>"; };
+		98FD55F729B907E400E00BDB /* TodoFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FD55FE29B907E400E00BDB /* TodoFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoFeatureTests.swift; sourceTree = "<group>"; };
+		98FD560F29B9111900E00BDB /* LegoPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LegoPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98DFDF8129B8FCFC00228BE2 /* LocalStorage in Frameworks */,
+				98DCC4A929B917680003EE01 /* StorageManager in Frameworks */,
+				98FD560329B907E400E00BDB /* TodoFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +135,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98FD55EB29B907E400E00BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98DCC4A529B917000003EE01 /* LocalStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FD55F429B907E400E00BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FD55F829B907E400E00BDB /* TodoFeature.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9865785229B1CA4000BB1BDA = {
 			isa = PBXGroup;
 			children = (
-				98DFDF7E29B8FB9700228BE2 /* LocalStorage */,
+				98FD560F29B9111900E00BDB /* LegoPackage */,
 				9865785D29B1CA4000BB1BDA /* LegoWorld */,
 				9865786E29B1CA4100BB1BDA /* LegoWorldTests */,
 				9865787829B1CA4100BB1BDA /* LegoWorldUITests */,
+				98FD55EF29B907E400E00BDB /* TodoFeature */,
+				98FD55FD29B907E400E00BDB /* TodoFeatureTests */,
 				9865785C29B1CA4000BB1BDA /* Products */,
 				98DFDF7F29B8FCFC00228BE2 /* Frameworks */,
 			);
@@ -92,6 +174,8 @@
 				9865785B29B1CA4000BB1BDA /* LegoWorld.app */,
 				9865786B29B1CA4100BB1BDA /* LegoWorldTests.xctest */,
 				9865787529B1CA4100BB1BDA /* LegoWorldUITests.xctest */,
+				98FD55EE29B907E400E00BDB /* TodoFeature.framework */,
+				98FD55F729B907E400E00BDB /* TodoFeatureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +223,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		98FD55EF29B907E400E00BDB /* TodoFeature */ = {
+			isa = PBXGroup;
+			children = (
+				98DFDF8229B9021400228BE2 /* TodosView.swift */,
+				98FD55F029B907E400E00BDB /* TodoFeature.h */,
+				98FD55F129B907E400E00BDB /* TodoFeature.docc */,
+			);
+			path = TodoFeature;
+			sourceTree = "<group>";
+		};
+		98FD55FD29B907E400E00BDB /* TodoFeatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				98FD55FE29B907E400E00BDB /* TodoFeatureTests.swift */,
+			);
+			path = TodoFeatureTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		98FD55E929B907E400E00BDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FD560029B907E400E00BDB /* TodoFeature.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9865785A29B1CA4000BB1BDA /* LegoWorld */ = {
@@ -149,14 +262,16 @@
 				9865785729B1CA4000BB1BDA /* Sources */,
 				9865785829B1CA4000BB1BDA /* Frameworks */,
 				9865785929B1CA4000BB1BDA /* Resources */,
+				98FD560429B907E400E00BDB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				98FD560229B907E400E00BDB /* PBXTargetDependency */,
 			);
 			name = LegoWorld;
 			packageProductDependencies = (
-				98DFDF8029B8FCFC00228BE2 /* LocalStorage */,
+				98DCC4A829B917680003EE01 /* StorageManager */,
 			);
 			productName = LegoWorld;
 			productReference = 9865785B29B1CA4000BB1BDA /* LegoWorld.app */;
@@ -198,6 +313,47 @@
 			productReference = 9865787529B1CA4100BB1BDA /* LegoWorldUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		98FD55ED29B907E400E00BDB /* TodoFeature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FD560A29B907E400E00BDB /* Build configuration list for PBXNativeTarget "TodoFeature" */;
+			buildPhases = (
+				98FD55E929B907E400E00BDB /* Headers */,
+				98FD55EA29B907E400E00BDB /* Sources */,
+				98FD55EB29B907E400E00BDB /* Frameworks */,
+				98FD55EC29B907E400E00BDB /* Resources */,
+				98DCC4A629B917000003EE01 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodoFeature;
+			packageProductDependencies = (
+				98DCC4A429B917000003EE01 /* LocalStorage */,
+			);
+			productName = TodoFeature;
+			productReference = 98FD55EE29B907E400E00BDB /* TodoFeature.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98FD55F629B907E400E00BDB /* TodoFeatureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FD560B29B907E400E00BDB /* Build configuration list for PBXNativeTarget "TodoFeatureTests" */;
+			buildPhases = (
+				98FD55F329B907E400E00BDB /* Sources */,
+				98FD55F429B907E400E00BDB /* Frameworks */,
+				98FD55F529B907E400E00BDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98FD55FA29B907E400E00BDB /* PBXTargetDependency */,
+				98FD55FC29B907E400E00BDB /* PBXTargetDependency */,
+			);
+			name = TodoFeatureTests;
+			productName = TodoFeatureTests;
+			productReference = 98FD55F729B907E400E00BDB /* TodoFeatureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +375,13 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 9865785A29B1CA4000BB1BDA;
 					};
+					98FD55ED29B907E400E00BDB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					98FD55F629B907E400E00BDB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9865785A29B1CA4000BB1BDA;
+					};
 				};
 			};
 			buildConfigurationList = 9865785629B1CA4000BB1BDA /* Build configuration list for PBXProject "LegoWorld" */;
@@ -237,6 +400,8 @@
 				9865785A29B1CA4000BB1BDA /* LegoWorld */,
 				9865786A29B1CA4100BB1BDA /* LegoWorldTests */,
 				9865787429B1CA4100BB1BDA /* LegoWorldUITests */,
+				98FD55ED29B907E400E00BDB /* TodoFeature */,
+				98FD55F629B907E400E00BDB /* TodoFeatureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +424,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9865787329B1CA4100BB1BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FD55EC29B907E400E00BDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FD55F529B907E400E00BDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,6 +473,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98FD55EA29B907E400E00BDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FD560C29B9083A00E00BDB /* TodosView.swift in Sources */,
+				98FD55F229B907E400E00BDB /* TodoFeature.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FD55F329B907E400E00BDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FD55FF29B907E400E00BDB /* TodoFeatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -306,6 +502,21 @@
 			isa = PBXTargetDependency;
 			target = 9865785A29B1CA4000BB1BDA /* LegoWorld */;
 			targetProxy = 9865787629B1CA4100BB1BDA /* PBXContainerItemProxy */;
+		};
+		98FD55FA29B907E400E00BDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98FD55ED29B907E400E00BDB /* TodoFeature */;
+			targetProxy = 98FD55F929B907E400E00BDB /* PBXContainerItemProxy */;
+		};
+		98FD55FC29B907E400E00BDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9865785A29B1CA4000BB1BDA /* LegoWorld */;
+			targetProxy = 98FD55FB29B907E400E00BDB /* PBXContainerItemProxy */;
+		};
+		98FD560229B907E400E00BDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98FD55ED29B907E400E00BDB /* TodoFeature */;
+			targetProxy = 98FD560129B907E400E00BDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,6 +638,7 @@
 		9865788029B1CA4100BB1BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +668,7 @@
 		9865788129B1CA4100BB1BDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +767,98 @@
 			};
 			name = Release;
 		};
+		98FD560629B907E400E00BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinsujin.TodoFeature;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98FD560729B907E400E00BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinsujin.TodoFeature;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98FD560829B907E400E00BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinsujin.TodoFeatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegoWorld.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegoWorld";
+			};
+			name = Debug;
+		};
+		98FD560929B907E400E00BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinsujin.TodoFeatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegoWorld.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LegoWorld";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,12 +898,34 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		98FD560A29B907E400E00BDB /* Build configuration list for PBXNativeTarget "TodoFeature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FD560629B907E400E00BDB /* Debug */,
+				98FD560729B907E400E00BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FD560B29B907E400E00BDB /* Build configuration list for PBXNativeTarget "TodoFeatureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FD560829B907E400E00BDB /* Debug */,
+				98FD560929B907E400E00BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		98DFDF8029B8FCFC00228BE2 /* LocalStorage */ = {
+		98DCC4A429B917000003EE01 /* LocalStorage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LocalStorage;
+		};
+		98DCC4A829B917680003EE01 /* StorageManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StorageManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
